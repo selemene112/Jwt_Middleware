@@ -84,11 +84,11 @@ func UserLogin(c *gin.Context){
 		})
 		return
 	}
-	token := helpers.GenerateToken(User.ID, User.Email)
+	// token := helpers.GenerateToken(User.ID, User.Email)
 
-	c.JSON(http.StatusOK,gin.H{
-		"token" : token,
-	})
+	// c.JSON(http.StatusOK,gin.H{
+	// 	"token" : token,
+	// })
 
 }
 

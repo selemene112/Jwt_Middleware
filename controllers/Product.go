@@ -98,7 +98,7 @@ func UserIndex(c *gin.Context){
 	// 	userID := uint(userData["userid"].(float64))
 
 	Product.UserID = userID
-	Product.ID = uint(productId)
+	Product.User.ID = uint(productId)
 
 	// err := db.Model(&Product).Where("id = ? ", userID).Find(models.Product{}).Error
 	// err := db.Select("user_id").Find(&Product, uint(productId)).Error
