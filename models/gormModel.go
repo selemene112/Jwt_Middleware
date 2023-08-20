@@ -11,7 +11,7 @@ type GormModel struct {
 // CreateAt time.Time `json:"created_at",omitempty`//CreatedAt time.Time `json:"created_at",omitempty`
 // UpdateAt time.Time `json:"created_at",omitempty`
 
-	ID        string      `gorm:"primaryKey" json:"id"`
+	ID        uint      `gorm:"primaryKey" json:"id"`
 	CreatedAt time.Time `json:"created_at",omitempty`
 	UpdatedAt time.Time `json:"updated_at",omitempty`
 
